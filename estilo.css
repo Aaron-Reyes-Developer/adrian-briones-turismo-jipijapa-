@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    
+}
+
+/* ////////////////////////////////////      CABECERA     ////////////////////////////////////*/
+.header{
+    width: 100%;
+    height: 100px;
+    background-color: transparent;
+    position: absolute;
+    background: linear-gradient(to bottom, rgb(39, 39, 39), rgba(255, 255, 255, 0));
+}
+.ul{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 10px ;
+}
+.ul li a:hover{
+    color: rgb(124, 124, 124);
+}
+
+
+
+
+/* ////////////////////////////////////      IMAGEN PRINCIPAL     ////////////////////////////////////*/
+.contenedor_imagen_principal{
+    width: 100%;
+    height: 100vh;
+    background-image: url("imagenes/imagen_principal.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+}
+
+.contenedor_h1{
+    border: 7px solid #fff;
+    padding: 20px 50px;
+}
+.contenedor_h1 h1{
+    font-size: 13rem;
+    color: rgb(255, 255, 255);
+    font-family: 'Moon Dance', cursive;
+    cursor: default;
+    font-weight: lighter;
+}
+
+
+
+/* ////////////////////////////////////      LUGARES     ////////////////////////////////////*/
+.contenedor_que_visitar{
+    width: 100%;
+    height: auto;
+    /* background-color: tomato; */
+    text-align: center;
+    margin-bottom: 100px;
+}
+.titlulo_lugares{
+    margin-bottom: 50px;
+    
+    
+}
+.contenedor_imagenes{
+    height: 300px;
+    transition: 0.3s ease-in-out all;
+    
+}
+.contenedor_imagenes img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+
+
+
+/* ////////////////////////////////////      INFORMACION     ////////////////////////////////////*/
+.contenedor_info{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-bottom: 100px;
+    margin-top: 150px;
+}
+.contenedor_info p{
+    padding-top: 20px;
+}
+.mapa_jipijapa{
+    width: 100%;
+    height: 200px;
+}
+
+
+
+
+/* ////////////////////////////////////      PLATOS TIPICOS     ////////////////////////////////////*/
+.contenedor_titulo_comida{
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    border-bottom: 2px solid #000;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.comida{
+    margin-bottom: 50px;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen_comida img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+
+
+/* ////////////////////////////////////      PISICNAS     ////////////////////////////////////*/
+.contedor_picsinas{
+    margin-bottom: 100px;
+}
+.piscionas{
+    width: 100%;
+    height: auto;
+    /* background-color: tomato; */
+    padding: 10px;
+    text-align: center;
+    
+}
+.piscionas img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+
+
+/* ////////////////////////////////////      FOOTER     ////////////////////////////////////*/
+.footer{
+    width: 100.9%;
+    background-color: #73583e ;
+    text-align: center;
+}
+.contenedor_footer{
+    margin-bottom: 20px;
+}
+.contenedor_footer ul li a{
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+/* ////////////////////////////////////      MEDIAQUERY     ////////////////////////////////////*/
+/* PARA QUE MAPS NO SE PONGA ALADO DE LA INFO Y SE DISTORCINE TODO */
+@media screen and (max-width: 992px) {
+    .contenedor_info{
+        display: block;
+    } 
+
+    .contenedor_imagenes{
+        margin-bottom: 50px;
+        height: 200px;
+    
+    }
+
+    .contenedor_que_visitar{
+        margin-bottom: 75px;
+    }
+
+    
+}
+
+
+
+/* TAMAÑO TABLET */
+@media screen and (max-width: 890px) {
+    .contenedor_imagen_principal h1{
+        font-size: 7rem;
+    }
+   
+}
+
+
+
+/* TAMAÑO TELEFONO */
+@media screen and (max-width: 500PX) {
+    .contenedor_imagen_principal h1{
+        font-size: 4rem;
+        
+    } 
+    .contenedor_imagen_principal{
+        width: 100%;
+        height: 50vh;
+        
+    }
+    
+    
+    .contenedor_titulo_comida{
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .comida{
+        margin-top: 100px;
+        height: 300px;
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+    .imagen_comida img{
+       object-fit: contain;
+    }
+
+    .contenedor_h1{
+        border: 3px solid #fff;
+        padding: 5px 13px;
+    }
+    
+    .footer{
+        width: 103%;
+        
+    }
+}
